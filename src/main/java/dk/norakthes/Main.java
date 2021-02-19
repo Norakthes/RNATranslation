@@ -10,14 +10,15 @@ public class Main {
         if (!file.exists()) {
             new FileWriter("DNA.txt");
             System.out.println("Laver ny fil 'DNA.txt'");
-            System.exit(1);
+            System.exit(2);
         }
         BufferedReader br = new BufferedReader(new FileReader(file));
+        if (br.readLine() == null) {
+            System.out.println("filen er tom");
+            System.exit(3);
+        }
 
         String DNA = br.readLine();
-        if (DNA.equalsIgnoreCase("")) {
-            System.out.println("filen er tom");
-        }
         br.close();
 
         String RNA = DNA
