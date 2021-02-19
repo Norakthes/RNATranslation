@@ -16,8 +16,8 @@ public class Main {
 
 
         System.out.println(RNA);
-        System.out.println("It took " + (System.nanoTime() - timer) + "NS");
         System.out.println(translate(RNA));
+        System.out.println("It took " + (System.nanoTime() - timer) + "NS");
     }
 
     private static String translate(String mRNA) {
@@ -103,9 +103,6 @@ public class Main {
                 .replace("GGC","Glycin")
                 .replace("GGA","Glycin")
                 .replace("GGG","Glycin");
-
-
-
 
         return proteiner;
     }
