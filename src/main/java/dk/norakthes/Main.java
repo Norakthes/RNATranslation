@@ -15,6 +15,9 @@ public class Main {
         BufferedReader br = new BufferedReader(new FileReader(file));
 
         String DNA = br.readLine();
+        if (DNA.equalsIgnoreCase("")) {
+            System.out.println("filen er tom");
+        }
         br.close();
 
         String RNA = DNA
