@@ -1,27 +1,8 @@
 package dk.norakthes;
 
-public class Main {
-
-    public static void main(String[] args) {
-        long timer = System.nanoTime();
-        String DNA = "TAC  AAA TGG TCA  CCG CGC GAT GTG TCG CAG CTC  ACC  GGT ATT";
-
-        String RNA = DNA
-                .replace('A','U')
-                .replace('T','A')
-                .replace('C','Æ')
-                .replace('G','Ø')
-                .replace('Æ','G')
-                .replace('Ø','C');
-
-
-        System.out.println(RNA);
-        System.out.println(translate(RNA));
-        System.out.println("It took " + (System.nanoTime() - timer) + "NS");
-    }
-
-    private static String translate(String mRNA) {
-        String proteiner = "";
+public class Translate {
+    protected static String translate(String mRNA) {
+        String proteiner;
 
         proteiner = mRNA
                 .replace("UUU","Fenylalanin")
