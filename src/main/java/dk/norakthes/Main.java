@@ -22,8 +22,6 @@ public class Main {
         else {
             DNA = br.readLine();
         }
-
-        System.out.println(DNA);
         br.close();
 
         String RNA = DNA
