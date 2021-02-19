@@ -13,12 +13,17 @@ public class Main {
             System.exit(2);
         }
         BufferedReader br = new BufferedReader(new FileReader(file));
-        if (br.readLine() == null) {
+        String DNA = "";
+        if (file.length() == 0) {
             System.out.println("filen er tom");
+            br.close();
             System.exit(3);
         }
+        else {
+            DNA = br.readLine();
+        }
 
-        String DNA = br.readLine();
+        System.out.println(DNA);
         br.close();
 
         String RNA = DNA
