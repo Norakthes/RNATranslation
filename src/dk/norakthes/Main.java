@@ -13,7 +13,6 @@ public class Main {
                 .replace('G','Ø')
                 .replace('Æ','G')
                 .replace('Ø','C');
-        //String RNA2 = RNA.replace('G', 'C');
 
 
         System.out.println(RNA);
