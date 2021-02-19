@@ -1,12 +1,10 @@
 package dk.norakthes;
 
-import java.util.Arrays;
-
 public class Main {
 
     public static void main(String[] args) {
         long timer = System.nanoTime();
-        String DNA = "TACGCCTAAGGGUCGAATTTATCGUUCTGATAGATTACTTTACGCGGCTAT";
+        String DNA = "TAC  AAA TGG TCA  CCG CGC GAT GTG TCG CAG CTC  ACC  GGT ATT";
 
         String RNA = DNA
                 .replace('A','U')
@@ -70,7 +68,7 @@ public class Main {
                 .replace("AUU","Isoleucin")
                 .replace("AUC","Isoleucin")
                 .replace("AUA","Isoleucin")
-                .replace("AUG","Methiodin/Starcodon")
+                .replace("AUG","Methiodin/Startcodon")
 
                 .replace("ACU","Threonin")
                 .replace("ACC","Threonin")
