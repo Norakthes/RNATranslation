@@ -77,7 +77,7 @@ public class Translate {
 
                 .replace("GAU","Aspartat")
                 .replace("GAC","Aspartat")
-                .replace("GAA","Glutama")
+                .replace("GAA","Glutamat")
                 .replace("GAG","Glutamat")
 
                 .replace("GGU","Glycin")
