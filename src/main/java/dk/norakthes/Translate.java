@@ -48,7 +48,7 @@ public class Translate {
                 .replace("AUU","Isoleucin")
                 .replace("AUC","Isoleucin")
                 .replace("AUA","Isoleucin")
-                .replace("AUG","Methiodin/Startcodon")
+                .replace("AUG","Methionin/Startcodon")
 
                 .replace("ACU","Threonin")
                 .replace("ACC","Threonin")
